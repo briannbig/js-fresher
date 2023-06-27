@@ -11,6 +11,12 @@ function addPrice(amount) {
     this.price = amount;
 }
 
+function addRating(stars) {
+    with (this) {
+        rating = stars
+    }
+}
+
 //constructing an object
 var book1 = new Object() //creating the object
 book1.subject = "Perl"
@@ -22,9 +28,12 @@ function book(subject, name) {
     this.subject = subject;
     this.name = name;
     this.addPrice = addPrice;
+    this.rating = 0;
+    this.addRating = addRating;
 }
 
 var book2 = new book("PHP", "sam")
 book2.addPrice(300.32)
+book2.addRating(4.5)
 console.log("book two: ");
 console.log(book2);
