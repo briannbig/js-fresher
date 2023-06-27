@@ -33,3 +33,7 @@ function hypotenuse(a, b) {
     return Math.sqrt(square(a) + square(b));
 }
 console.log(hypotenuse(3, 5));
+
+// function constructor: new Function()
+var balance = new Function("cash", "debt", "return cash - debt;")
+console.log(balance(100, 45));
