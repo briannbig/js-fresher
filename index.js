@@ -21,5 +21,9 @@ country = "Kenya"
 
 var isAdult = age >= 18
 
-console.log(username + ' of email: ' + email+ ' from ' + city + ', ' + country +' is ' + age + ' years old so is he an adult? ...' );
-console.log(isAdult ? 'yes': 'no');
+console.log(username + ' of email: ' + email + ' from ' + city + ', ' + country + ' is ' + age + ' years old so is he an adult? ...');
+console.log(isAdult ? 'yes' : 'no');
+
+age = "twenty five";
+
+console.log(age);
