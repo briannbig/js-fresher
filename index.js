@@ -33,3 +33,22 @@ age = "twenty five";
 console.log(age); // returns sting
 
 console.log('Type of age after change at runtime: ' + typeof age);
+
+
+// labels in loops:
+console.log("Labels in loops ':' ");
+
+console.log('Entering the outer loop');
+outerloop:
+for (var i = 0; i < 10; i++) {
+    console.log('outerloop: ' + i);
+    innerloop:
+    for (var j = 0; j < 10; j++) {
+        if (j > 3) break;
+        if (i == 2) break innerloop;
+        if (i == 4) break outerloop;
+
+        console.log('Inner loop: ' + j);
+    }
+
+}
